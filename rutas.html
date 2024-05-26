@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalada - Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="image/png" href="./imagenes/favicon.png">
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container enfocarTexto">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imagenes/logo.png" alt="Logo de una persona escalando" width="30" height="30">
+                    Escalada y aventura
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./rutas.html">Rutas de Escalada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Botón ir hacia arriba -->
+    <a href="#" class="btn-ir-arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="rutas">
+            <div class="container">
+                <h2 class="enfocarTexto">Nuestras Rutas de Escalada</h2>
+                <div class="row deslizarArriba">
+                    <div class="col-md-4">
+                        <div class="caja">
+                            <img src="./imagenes/ruta1.jpg" alt="Ruta 1" class="img-fluid">
+                            <h3>Aconcagua</h3>
+                            <p>Escalá la montaña más alta de América.</p>
+                            <a href="#" class="btn btn-primary">Más Detalles</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="caja">
+                            <img src="./imagenes/ruta2.jpg" alt="Ruta 2" class="img-fluid">
+                            <h3>Fitz Roy (Cerro El Chaltén)</h3>
+                            <p>Desafiate con sus paredes verticales. Requiere técnicas avanzadas.</p>
+                            <a href="#" class="btn btn-primary">Más Detalles</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="caja">
+                            <img src="./imagenes/ruta3.jpg" alt="Ruta 3" class="img-fluid">
+                            <h3>Piedra Parada</h3>
+                            <p>Ideal para iniciantes y escaladores intermedios.</p>
+                            <a href="#" class="btn btn-primary">Más Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Pie de pagina -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Balcarce 50, Ciudad de Buenos Aires, Argentina
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> <a href="https:/wa.me/error">+1 234 567 890</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i> <a href="mailto:">info@escalada.com</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Seguinos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="./rutas.html">Rutas de Escalada</a></li>
+                        <li><a href="./tienda.html">Tienda</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 Codo a Codo. Página creada con fines educativos. Creada por Nahuel Lemos.</p>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/animaciones.js"></script>
+</body>
+
+</html>
