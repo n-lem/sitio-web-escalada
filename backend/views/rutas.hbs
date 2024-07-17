@@ -1,0 +1,19 @@
+<main>
+    <section class="rutas">
+        <div class="container">
+            <h2 class="enfocarTexto">Nuestras Rutas de Escalada</h2>
+            <div class="row deslizarArriba">
+                {{#each destinos}}
+                <div class="col-md-4">
+                    <div class="caja">
+                        <img src="{{this.imagen}}" alt="{{this.nombre}}" class="img-fluid">
+                        <h3>{{this.nombre}}</h3>
+                        <p>{{this.descripcion}}</p>
+                        <a class="btn btn-outline-primary" href="{{this.ubicacion}}" role="button">Ver mapa</a>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+</main>

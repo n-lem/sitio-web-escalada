@@ -1,0 +1,41 @@
+<!-- Contenido principal -->
+<main>
+    <section class="espaciado-vertical">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 enfocarTexto">
+                    <h2>Nuestra Historia</h2>
+                    <p>Nuestro equipo está conformado por escaladores experimentados y guías certificados,
+                        comprometidos en brindar una experiencia segura y emocionante a todos nuestros visitantes.
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium exercitationem repellendus
+                        temporibus necessitatibus aspernatur ratione adipisci facilis aliquid provident possimus?</p>
+                </div>
+                <div class="col-md-6 deslizarArriba">
+                    <img src="/images/sobre-nosotros.svg" alt="Escalada" />
+                    <!-- <img src="imagenes/sobre-nosotros.jpg" alt="Sobre Nosotros" class="img-fluid"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipo">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="row">
+                {{#each sobre_nosotros}}
+                <div class="col-md-4">
+                    <div class="miembro-equipo">
+                        <img src="{{this.imagen}}" alt="{{this.nombre}} {{this.apellido}}" class="img-fluid">
+                        <h3>{{this.nombre}} {{this.apellido}}</h3>
+                        <h5>{{this.rol}}</h5>
+                        <p>{{this.descripcion}}</p>
+                        <a href="mailto:{{this.contacto}}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Contactar</a>
+                    </div>
+                </div>
+                {{/each}}
+                
+            </div>
+        </div>
+    </section>
+</main>
