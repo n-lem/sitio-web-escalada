@@ -1,24 +1,25 @@
-<h1>{{#if product.id}}Editar{{else}}Crear{{/if}} Producto</h1>
-<form action="{{action}}" method="POST" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="nombre">Nombre</label>
-    <input type="text" class="form-control" id="nombre" name="nombre" value="{{product.nombre}}" required>
-  </div>
-  <div class="form-group">
-    <label for="descripcion">Descripción</label>
-    <textarea class="form-control" id="descripcion" name="descripcion" required>{{product.descripcion}}</textarea>
-  </div>
-  <div class="form-group">
-    <label for="precio">Precio</label>
-    <input type="number" class="form-control" id="precio" name="precio" value="{{product.precio}}" step="0.01" required>
-  </div>
-  <div class="form-group">
-    <label for="imagen">Imagen</label>
-    <input type="file" class="form-control-file" id="imagen" name="imagen" {{#unless product.id}}required{{/unless}}>
-    {{#if product.imagen}}
-      <img src="/images/productos/{{product.imagen}}" alt="{{product.nombre}}" width="100" class="mt-2">
-      <input type="hidden" name="currentImage" value="{{product.imagen}}">
-    {{/if}}
-  </div>
-  <button type="submit" class="btn btn-primary">Guardar</button>
-</form>
+<div class="cointainer-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <h1>Alta de Producto</h1>
+            <form action='/alta' method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="nombre"
+                        value="{{product.nombre}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio</label>
+                    <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio" name="precio"
+                        value="{{product.precio}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen</label>
+                    <input type="file" class="form-control-file" id="imagen" name="imagen" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-5">Guardar</button>
+                <a href="/productos" class="btn btn-secondary btn-block mt-5">Atrás</a>
+            </form>
+        </div>
+    </div>
+</div>
